@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import interviewIllustration from './students-interview-illustration.jpg';
+
 import {
   BarChart,
   Bar,
@@ -340,6 +342,14 @@ const App: React.FC = () => {
           {activeTab === 'interview' && (
             <div className="text-gray-700">
               <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">4. 인터뷰 기반 질적 분석</h2>
+              {/* 이미지 추가 */}
+              <div className="mb-6 flex justify-center">
+                <img
+                 src={interviewIllustration}
+                 alt="학생 인터뷰 장면 일러스트"
+                 className="rounded-lg shadow-md max-w-full md:max-w-2xl"
+                 />
+              </div>
               
               <div className="mb-10">
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">1) 활용 기준 인식</h3>
